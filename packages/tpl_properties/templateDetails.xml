@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" type="template" client="site">
+	<name>Properties</name>
+	<creationDate>2021-03-21</creationDate>
+	<author>Karthik Naveen</author>
+	<authorEmail>karthik@outlook.com</authorEmail>
+	<authorUrl>http://www.example.com</authorUrl>
+	<copyright>Copyright (C) 2021 Open Source, Inc. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>TPL_PROPERTIES_XML_DESCRIPTION</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>template_preview.png</filename>
+		<folder>assets</folder>
+		<folder>language</folder>
+	</files>
+    <languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_properties.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_properties.sys.ini</language>
+	</languages>
+	<positions>
+		<position>banner</position>
+		<position>debug</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>footer</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">				
+
+				<field 
+					name="logoFile" 
+					type="media" 
+					label="TPL_PROPERTIES_LOGO_LABEL"
+					description="TPL_PROPERTIES_LOGO_DESC" 
+					class="" 
+					default="images/joomla_black.png"
+				/>
+
+				<field 
+					name="sitetitle"  
+					type="text" 
+					label="JGLOBAL_TITLE"
+					description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					default="Sample Site"
+					filter="string" 
+				/>
+
+				<field 
+					name="sitedescription"  
+					type="text" 
+					label="JGLOBAL_DESCRIPTION"
+					description="JGLOBAL_SUBHEADING_DESC"
+					default="Sample"
+					filter="string" 
+				/>
+
+				<field 
+					name="fluidContainer"
+					type="radio"
+					label="TPL_PROPERTIES_FLUID_LABEL"
+					description="TPL_PROPERTIES_FLUID_DESC"
+					class="btn-group btn-group-yesno"
+					default="0"
+					>
+					<option value="1">TPL_PROPERTIES_FLUID</option>
+					<option value="0">TPL_PROPERTIES_STATIC</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset label="COM_PROPERTIES" name="properties">
+        <field name="apiendpoint" filter="safehtml" default="https://carolineolds-strapi-dev.q.starberry.com/properties?_limit=50" type="text" required="true" label="COM_PROPERTIES_FORM_LBL_APIENDPOINT" description="COM_PROPERTIES_FORM_DESC_APIENDPOINT" hint="COM_PROPERTIES_FORM_LBL_APIENDPOINT"/>
+		<field name="currency" type="list" default="EUR" required="true" label="COM_PROPERTIES_FORM_LBL_CURRENCY" description="COM_PROPERTIES_FORM_DESC_CURRENCY">
+			<option value="">Please Select</option>
+			<option value="USD">USD</option>
+			<option value="EUR">EUR</option>
+		</field>
+    </fieldset>
+	<fieldset name="permissions"
+			  label="JCONFIG_PERMISSIONS_LABEL"
+			  description="JCONFIG_PERMISSIONS_DESC">
+		<field name="rules"
+			   type="rules"
+			   label="JCONFIG_PERMISSIONS_LABEL"
+			   class="inputbox"
+			   validate="rules"
+			   filter="rules"
+			   component="com_properties"
+			   section="component" />
+	</fieldset>
+</config>

@@ -1,0 +1,12 @@
+.icon-properties_list {
+	background-image: url(../images/view-16x16-properties_list.png);
+}
+
+.icon-48-properties_list {
+	background-image: url(../images/view-48x48-properties_list.png);
+}
+
+.list-media {
+      max-width: 100px;
+      max-height: 100px;
+}
